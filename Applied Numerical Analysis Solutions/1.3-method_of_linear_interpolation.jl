@@ -76,3 +76,13 @@ root5, iter5 = modified_linear_interpolation(f3, 0, 3, 1e-6, 1000)
 @printf("Root of f3 using modified linear interpolation: %.8f (Iterations: %d)\n", root5, iter5)
 
 # Exercise 9: Algorithm for the secant method (defined above as secant_method)
+
+#=
+Section 1.3
+5. The polynomial $x^3+x^2-3 x-3=0$, used as an example in Sections 1.2 and 1.3 where the root at $x=\sqrt{3}$ was approximated, has its other roots at $x=-1$ and $x=-\sqrt{3}$. Beginning with two suitable values that bracket the value $-\sqrt{3}$, show that the method of linear interpolation converges to that root.
+6. In Exercise 5, if one tried as starting values $x=-1.5$ and $x=-1.7$, the function would not change sign, and, hence, they do not qualify for beginning the method of linear interpolation. However, the secant method can begin with these values. Use them to begin the secant method. How many iterations are needed to estimate the root correct to four decimals? Suppose the starting values are -1.5 and -1.1 ; which root is obtained by the secant method? What root if we begin with -1.5 and -1.25 ?
+7. Find where the cubic $y=x^3-x+1$ intersects the parabola $y=2 x^2$. Make a sketch of the two curves to locate the intersections, and then use linear interpolation and/or the secant method to evaluate the $x$-values of the points of intersection.
+8. a) Use the method of linear interpolation to solve the equations in Exercise 4.
+b) Use modified linear interpolation to solve these equations and compare the rates of conyergence with those obtained in part (a).
+9. Write the algorithm for the secant method, following the model of the other algorithms of this chapter.
+=#
