@@ -1,3 +1,3 @@
 # Julia Scientific Scripts Repository
 
-This repository contains multiple Julia scripts related to numerical analysis and scientific computing. These scripts are utilised in the Numerical Analysis class to demonstrate various topics, such as regularisation, polynomial transformations, function recovery, Newton's method for solving nonlinear equations, and more.
+This repository has several Julia scripts for numerical analysis and scientific computing. They are used in the Numerical Analysis class to show different topics like regularization, polynomial transformations, function recovery, and Newton's method for solving nonlinear equations.
