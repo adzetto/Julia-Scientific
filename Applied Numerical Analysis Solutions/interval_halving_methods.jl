@@ -73,7 +73,7 @@ f4d(x) = 3x^3 + 4x^2 - 8x - 1
 root4d, _ = bisection_method(f4d, 0, 1, 1e-6, 1000)
 @printf("Smallest positive root of 3x^3 + 4x^2 - 8x - 1: %.8f\n", root4d)
 
-
+ 
 #=
 Section 1.2
 1. The equation $e^x-3 x$ has a root at $r=0.61906129$. Beginning with the interval $[0,1]$, use six iterations of the method of halving the interval to find this root. How many iterations would you need to evaluate the root correct to four significant places-that is, $|x-r|<$ 0.00005 ? How many for eight places?
