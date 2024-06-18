@@ -1,6 +1,6 @@
 # interval_halving_methods.jl
 # Description:
-# Solves various equations using the interval halving (bisection) method.
+# Uses the interval halving (bisection) approach to solve a number of equations.
 # Author: adzetto
 # Date: 2024-06-18
 
