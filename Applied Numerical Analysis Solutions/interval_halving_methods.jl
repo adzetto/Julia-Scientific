@@ -24,55 +24,54 @@ end
 # 1. Finding the root of e^x - 3x using interval halving.
 f1(x) = exp(x) - 3x
 root1, iter1 = bisection_method(f1, 0, 1, 1e-6, 6)
-@printf "Root of e^x - 3x after 6 iterations: %.8f (Iterations: %d)\n" root1, iter1
+@printf("Root of e^x - 3x after 6 iterations: %.8f (Iterations: %d)\n", root1, iter1)
 
 # Find the number of iterations required for 4 and 8 significant figures.
 tol_4sig = 0.00005
 tol_8sig = 0.000000005
 _, iter_4sig = bisection_method(f1, 0, 1, tol_4sig, 1000)
 _, iter_8sig = bisection_method(f1, 0, 1, tol_8sig, 1000)
-@printf "Iterations needed for 4 significant places: %d\n" iter_4sig
-@printf "Iterations needed for 8 significant places: %d\n" iter_8sig
+@printf("Iterations needed for 4 significant places: %d\n", iter_4sig)
+@printf("Iterations needed for 8 significant places: %d\n", iter_8sig)
 
 # 2. Finding zeros of (x-0.4)(x-0.6).
 f2(x) = x^2 - x + 0.24
 root2a, _ = bisection_method(f2, 0.3, 0.5, 1e-6, 1000)
 root2b, _ = bisection_method(f2, 0.5, 0.7, 1e-6, 1000)
-@printf "Root near 0.4: %.8f\n" root2a
-@printf "Root near 0.6: %.8f\n" root2b
+@printf("Root near 0.4: %.8f\n", root2a)
+@printf("Root near 0.6: %.8f\n", root2b)
 
 # Error bound and actual error after 5 iterations from interval [0.5, 1.0].
 root2c, iter5 = bisection_method(f2, 0.5, 1.0, 1e-6, 5)
 error_bound_5 = (1.0 - 0.5) / (2^5)
 actual_error_5 = abs(root2c - 0.6)
-@printf "Bound to error after 5 iterations: %.8f\n" error_bound_5
-@printf "Actual error after 5 iterations: %.8f\n" actual_error_5
+@printf("Bound to error after 5 iterations: %.8f\n", error_bound_5)
+@printf("Actual error after 5 iterations: %.8f\n", actual_error_5)
 
 # 3. Intersection of y = x - 2 and y = ln(x).
 f3(x) = log(x) - x + 2
 root3, _ = bisection_method(f3, 1, 3, 1e-4, 1000)
-@printf "Intersection of y = x - 2 and y = ln(x): %.8f\n" root3
+@printf("Intersection of y = x - 2 and y = ln(x): %.8f\n", root3)
 
 # 4a. Smallest positive root of e^x - x - 2.
 f4a(x) = exp(x) - x - 2
 root4a, _ = bisection_method(f4a, 0, 2, 1e-6, 1000)
-@printf "Smallest positive root of e^x - x - 2: %.8f\n" root4a
+@printf("Smallest positive root of e^x - x - 2: %.8f\n", root4a)
 
 # 4b. Smallest positive root of x^3 - x^2 - 2x + 1.
 f4b(x) = x^3 - x^2 - 2x + 1
 root4b, _ = bisection_method(f4b, 0, 1, 1e-6, 1000)
-@printf "Smallest positive root of x^3 - x^2 - 2x + 1: %.8f\n" root4b
+@printf("Smallest positive root of x^3 - x^2 - 2x + 1: %.8f\n", root4b)
 
 # 4c. Smallest positive root of 2e^(-x) - sin(x).
 f4c(x) = 2exp(-x) - sin(x)
 root4c, _ = bisection_method(f4c, 0, 2, 1e-6, 1000)
-@printf "Smallest positive root of 2e^(-x) - sin(x): %.8f\n" root4c
+@printf("Smallest positive root of 2e^(-x) - sin(x): %.8f\n", root4c)
 
 # 4d. Smallest positive root of 3x^3 + 4x^2 - 8x - 1.
 f4d(x) = 3x^3 + 4x^2 - 8x - 1
 root4d, _ = bisection_method(f4d, 0, 1, 1e-6, 1000)
-@printf "Smallest positive root of 3x^3 + 4x^2 - 8x - 1: %.8f\n" root4d
-
+@printf("Smallest positive root of 3x^3 + 4x^2 - 8x - 1: %.8f\n", root4d)
 
 
 #=
