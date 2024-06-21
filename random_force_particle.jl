@@ -3,6 +3,10 @@
 # Author: adzetto
 # Date: 2024-06-21
 
+#=
+16. Write a program to simulate the following phenomenon: A particle is moving in the $x y$-plane under the effect of a random force. It starts at $(0,0)$. At the end of each second, it moves 1 unit in a random direction. We want to record in a table its position at the end of each second, taking altogether 1000 seconds.
+=#
+
 using Random
 using Printf
 
