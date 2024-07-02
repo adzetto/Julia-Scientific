@@ -90,13 +90,13 @@ end
 
 function gamln(a::dp)::dp
     #-----------------------------------------------------------------------
-    #            EVALUATION OF LN(GAMMA(A)) FOR POSITIVE A
+    #      EVALUATION OF LN(GAMMA(A)) FOR POSITIVE A
     #-----------------------------------------------------------------------
-    #     WRITTEN BY ALFRED H. MORRIS
-    #          NAVAL SURFACE WARFARE CENTER
-    #          DAHLGREN, VIRGINIA
+    #            WRITTEN BY ALFRED H. MORRIS
+    #            NAVAL SURFACE WARFARE CENTER
+    #               DAHLGREN, VIRGINIA
     #--------------------------
-    #     D = 0.5*(LN(2*PI) - 1)
+    #              D = 0.5*(LN(2*PI) - 1)
     #--------------------------
     
     d = 0.5 * (log(2π) - 1)
@@ -201,7 +201,7 @@ function bcorr(a0::dp, b0::dp)::dp
     b = max(a0, b0)
     
     h = a / b
-    cc = h / (1.0 + h)  # Renamed variable to avoid shadowing the array 'c'
+    cc = h / (1.0 + h)
     x = 1.0 / (1.0 + h)
     x2 = x * x
     
