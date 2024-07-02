@@ -1,3 +1,7 @@
+# Date: 2024-07-02  Time: 10:12:00
+# ALGORITHM AS 6  APPL. STATIST. VOL.17, NO.1
+# Translated from FORTRAN by Muhammet Yağcıoğlu
+
 module CholeskyFactorization
 
 # chol(a::Vector{Float64}, n::Int, nn::Int, u::Vector{Float64}, nullty::Ref{Int}, ifault::Ref{Int})

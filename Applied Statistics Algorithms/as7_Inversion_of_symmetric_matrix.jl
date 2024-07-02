@@ -1,3 +1,11 @@
+# Algorithm AS7, Applied Statistics, vol.17, 1968, p.198.
+# N.B. Argument W has been removed.
+# Forms in c( ) as lower triangle, a generalised inverse
+# of the positive semi-definite symmetric matrix a( )
+# order n, stored as lower triangle
+# Translated from FORTRAN by Muhammet Yağcıoğlu
+
+
 module SymmetricMatrixInversion
 
 using LinearAlgebra
