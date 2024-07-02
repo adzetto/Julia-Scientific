@@ -1,5 +1,5 @@
 # Algorithm as 60.1 appl.statist. (1973) vol.22 no.2 & Algorithm AS 60.2 appl.statist. (1973) vol.22, no.2
-# Translated from FORTRAN by Muhammet Yağcıoğlu
+# Translated from FORTRAN by adzetto
 
 module AS60
 

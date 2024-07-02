@@ -3,7 +3,7 @@
 # Forms in c( ) as lower triangle, a generalised inverse
 # of the positive semi-definite symmetric matrix a( )
 # order n, stored as lower triangle
-# Translated from FORTRAN by Muhammet Yağcıoğlu
+# Translated from FORTRAN by adzetto
 
 
 module SymmetricMatrixInversion

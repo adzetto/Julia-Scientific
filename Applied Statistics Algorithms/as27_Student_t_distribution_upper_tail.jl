@@ -2,7 +2,7 @@
 # Date: 2024-07-02  Time: 10:12:00
 # ALGORITHM AS 27  APPL. STATIST. VOL.19, NO.1
 # Calculate the upper tail area under Student's t-distribution
-# Translated from FORTRAN by Muhammet Yağcıoğlu
+# Translated from FORTRAN by adzetto
 
 function studnt(t, doff)
     # Local variables
